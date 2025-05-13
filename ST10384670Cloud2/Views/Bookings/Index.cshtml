@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Add Booking";
+}
+
+<style>
+    body {
+        background-color: rgba(173, 216, 230, 0.3); /* Light blue with transparency */
+    }
+
+    .booking-card {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        max-width: 600px;
+        margin: auto;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="booking-card">
+        <h2 class="text-primary text-center mb-4">📋 Add a New Booking</h2>
+        <form>
+            <div class="mb-3">
+                <label for="EventName" class="form-label">Event Name</label>
+                <input type="text" class="form-control" id="EventName" placeholder="Enter event name">
+            </div>
+
+            <div class="mb-3">
+                <label for="FullName" class="form-label">Your Full Name</label>
+                <input type="text" class="form-control" id="FullName" placeholder="Enter your name">
+            </div>
+
+            <div class="mb-3">
+                <label for="Email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="Email" placeholder="example@email.com">
+            </div>
+
+            <div class="mb-3">
+                <label for="Date" class="form-label">Booking Date</label>
+                <input type="date" class="form-control" id="Date">
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-success">✅ Submit Booking</button>
+            </div>
+        </form>
+    </div>
+</div>

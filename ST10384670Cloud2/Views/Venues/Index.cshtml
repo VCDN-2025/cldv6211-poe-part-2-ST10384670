@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "Venues";
+}
+
+<!-- Custom Styles -->
+<style>
+    body {
+        background: linear-gradient(to right, #f0f9ff, #e0f7fa);
+    }
+
+    .header {
+        background-color: #007bff;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+
+    .footer {
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 50px;
+    }
+
+    .card {
+        transition: transform 0.2s ease-in-out;
+    }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+    .card-title {
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    .btn-outline-primary {
+        border-radius: 20px;
+    }
+</style>
+
+<!-- Header -->
+<div class="header">
+    Venues
+</div>
+
+<!-- Venue Listing -->
+<div class="container mt-5">
+    <h2 class="text-center mb-5 text-dark">Explore Our Event Spaces</h2>
+
+    <div class="row">
+        <!-- Venue 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="~/images/image5.png" class="card-img-top" alt="Venue 1">
+
+                <div class="card-body bg-light">
+                    <h5 class="card-title">Modern Event Hall</h5>
+                    <p class="card-text">Capacity: 200 | Location: Cape Town</p>
+                    <a href="#" class="btn btn-outline-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Venue 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="~/images/image6.png" class="card-img-top" alt="Venue 1">
+
+                <div class="card-body bg-light">
+                    <h5 class="card-title">Outdoor Garden Venue</h5>
+                    <p class="card-text">Capacity: 150 | Location: Durban</p>
+                    <a href="#" class="btn btn-outline-success">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Venue 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="~/images/image7.png" class="card-img-top" alt="Venue 1">
+
+                <div class="card-body bg-light">
+                    <h5 class="card-title">Grand Conference Hall</h5>
+                    <p class="card-text">Capacity: 300 | Location: Johannesburg</p>
+                    <a href="#" class="btn btn-outline-danger">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    &copy; 2025 EventEase | All rights reserved.
+</div>
+

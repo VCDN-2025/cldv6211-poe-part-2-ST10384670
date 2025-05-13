@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<style>
+    body {
+        background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .overlay {
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        margin-top: 50px;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #007bff;
+        text-shadow: 1px 1px #ddd;
+    }
+
+    label {
+        font-weight: 600;
+    }
+</style>
+
+<div class="container">
+    <div class="overlay">
+        <h2 class="text-center section-title mb-5">Contact Us</h2>
+
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group mb-3">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email">Your Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Login Details / Admin Contact -->
+            <div class="col-md-6">
+                <h4 class="mb-3 text-info">Admin Login Details</h4>
+                <p class="text-muted">For booking specialists or admin access, use the following credentials:</p>
+                <ul class="list-group mb-4">
+                    <li class="list-group-item">Username: <strong>admin@eventease.co.za</strong></li>
+                    <li class="list-group-item">Password: <strong>Event2025</strong></li>
+                    <li class="list-group-item">Support Line: <strong>+27 12 345 6789</strong></li>
+                </ul>
+
+                <h5 class="text-success">Office Address:</h5>
+                <p>123 EventEase Street,<br>Cape Town, 8000<br>South Africa</p>
+            </div>
+        </div>
+    </div>
+</div>
